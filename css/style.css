@@ -39,6 +39,74 @@ ul {
     background: url(../images/download.svg) no-repeat;
 }
 
+@-webkit-keyframes bounce {
+
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(-50%, -30px, 0);
+        transform: translate3d(-50%, -30px, 0);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(-50%, -15px, 0);
+        transform: translate3d(-50%, -15px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(-50%, -4px, 0);
+        transform: translate3d(-50%, -4px, 0);
+    }
+}
+
+@keyframes bounce {
+
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(-50%, -30px, 0);
+        transform: translate3d(-50%, -30px, 0);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(-50%, -15px, 0);
+        transform: translate3d(-50%, -15px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(-50%, -4px, 0);
+        transform: translate3d(-50%, -4px, 0);
+    }
+}
+
 /*header started.*/
 header {
     transition: all .3s ease-in-out;
@@ -91,7 +159,7 @@ a.navbar-brand img {
     transition: .3s all ease-in-out;
 }
 
-.navbar-light .navbar-nav .dropdown button{
+.navbar-light .navbar-nav .dropdown button {
     padding: 0;
     background: transparent;
     border: none;
@@ -99,7 +167,9 @@ a.navbar-brand img {
     line-height: 42px;
 }
 
-.navbar-light .navbar-nav .dropdown button:hover, .navbar-light .navbar-nav .dropdown button:active, .navbar-light .navbar-nav .dropdown button:focus{
+.navbar-light .navbar-nav .dropdown button:hover,
+.navbar-light .navbar-nav .dropdown button:active,
+.navbar-light .navbar-nav .dropdown button:focus {
     box-shadow: none;
 }
 
@@ -112,7 +182,7 @@ a.navbar-brand img {
     color: #fff;
 }
 
-.navbar-light .navbar-nav .dropdown .dropdown-menu a:hover{
+.navbar-light .navbar-nav .dropdown .dropdown-menu a:hover {
     background: #4c944f;
 }
 
@@ -172,6 +242,12 @@ banner-signup {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 /*banner ended.*/
@@ -348,12 +424,12 @@ footer .copyright p {
 .about-banner,
 .restaurant-banner,
 .register-banner {
-    height: 420px;
+    height: 320px;
 }
 
 .restaurant-banner {
     background: url(../images/our-restaurent-banner.jpg) no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -390,6 +466,7 @@ form.search span.filter {
 form.search select {
     height: 30px;
     padding: 0 10px;
+    -webkit-appearance: menulist-button;
 }
 
 form.search .input-group {
@@ -478,7 +555,7 @@ section.restaurent-list .discount-box {
 /*about us started.*/
 .about-banner {
     background: url(../images/about-banner.jpg) no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -561,17 +638,42 @@ section.restaurent-list .discount-box {
 /*register page started.*/
 .register-banner {
     background: url(../images/register-banner.jpg) no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
     background-position: center;
+}
+
+.register .upper{
+    padding: 60px 30px;
 }
 
 .register-box {
     padding: 60px 0;
 }
 
+.register .register-box{
+    padding: 0;
+}
+
+.register h1{
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.register p{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.register ul li {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
 .register-box p,
 .register-box label,
-.membership-details label{
+.membership-details label {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 6px;
@@ -628,7 +730,7 @@ section.restaurent-list .discount-box {
 .register-box button.btn-submit,
 .restaurant-details-form button.btn-submit,
 .login .btn-submit,
-.membership-details .btn-submit{
+.membership-details .btn-submit {
     border-radius: 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     width: 50%;
@@ -645,7 +747,7 @@ a.login {
 /*restaurant indiavidual started.*/
 .individual-restaurant-banner {
     background: url(../images/restaurent-banner.jpg) no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -707,7 +809,7 @@ a.restaurent-discount {
 
 .about-restaurant {
     background: url(../images/about-restaurant.jpg) #ebebeb no-repeat right top;
-    background-size: auto 100%;
+    background-size: 100%;
     padding: 120px 0;
 }
 
@@ -791,7 +893,7 @@ a.restaurent-discount {
 /*identification started.*/
 .voucher-banner {
     background: url(../images/identification-banner.jpg) no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -818,7 +920,7 @@ p.identification-dis span {
 /*user-profile started.*/
 .user-profile-banner {
     background: url(../images/about-banner.jpg) no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -885,7 +987,7 @@ p.identification-dis span {
 /*restaurant-details-banner started.*/
 .restaurant-details-banner {
     background: url(../images/restaurant-details-banner.jpg) no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -1073,7 +1175,7 @@ table.dishes tbody tr:nth-child(even) {
 /*section contact started.*/
 .contact-banner {
     background: url(../images/contact-bannerr.jpg) no-repeat;
-    background-size: auto 100%;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -1133,7 +1235,8 @@ table.dishes.manage-restaurant tbody td a:not(:last-child) {
 
 
 /*mambership inner started.*/
-.membership-details .red{
+.membership-details .red {
     background: #e20000 !important;
 }
+
 /*mambership inner ended.*/
