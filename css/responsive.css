@@ -1,0 +1,481 @@
+/*Ipad landscape mode started.*/
+@media screen and (max-width: 1024px) {
+
+    .why-us,
+    .discount {
+        background-size: 36%;
+    }
+
+    ul.copyright-nav li a {
+        padding-right: 14px;
+    }
+
+    .footer-signup p a {
+        margin-top: 15px;
+    }
+
+    /*    our restaurant started.*/
+    form.search .input-group {
+        max-width: 35%;
+    }
+
+    .our-meals {
+        padding: 60px 0;
+        background-size: 21%;
+    }
+
+    /*    our restaurant ended.*/
+
+    /*    individual restaurant started.*/
+    .about-restaurant {
+        padding: 30px 0;
+    }
+
+    /*    individual restaurant ended.*/
+    user-profile .tab-pane {
+        padding: 0 30px;
+    }
+
+    .upload-box {
+        padding: 30px 24px;
+    }
+
+    .upload-box button {
+        margin: auto;
+    }
+}
+
+/*Ipad landscape mode ended.*/
+/*Ipad portrait mode started.*/
+@media screen and (max-width: 768px) {
+    header {
+        background: #64ac63;
+    }
+
+    .banner-box h2 {
+        font-size: 50px;
+        line-height: normal;
+    }
+
+    .banner-box p {
+        padding: 0 30px;
+    }
+
+    .why-us,
+    .discount {
+        background-size: initial;
+    }
+
+    .discount-box {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link.btn {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+        background: transparent;
+        border: none;
+        text-align: center;
+    }
+
+    .navbar-light .navbar-nav .nav-item {
+        margin-right: 15px;
+    }
+
+    footer {
+        padding-bottom: 10px;
+    }
+
+    /*    our restaurant started.*/
+    .filter-event {
+        padding: 15px 0;
+    }
+
+    .filter-event span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .filter-event .icon i {
+        padding: 0 10px;
+        cursor: pointer;
+    }
+
+    .submit {
+        padding: 7px 15px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .filter-event form.mob-search {
+        background: #fff;
+        display: none;
+        padding-top: 15px;
+    }
+
+    .filter-event form.mob-search input {
+        font-size: 20px;
+        line-height: 40px;
+        height: 40px;
+    }
+
+    .filter {
+        background: #fff;
+        margin-top: 15px;
+        display: none;
+    }
+
+    .filter ul {
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+        padding: 0 15px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #000;
+    }
+
+    .filter ul li a {
+        color: black;
+        display: block;
+        padding: 10px 5px;
+    }
+
+    .filter ul li:not(:last-child) a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    }
+
+    .check-box {
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+        padding: 15px;
+    }
+
+    .check-box input {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 15px;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .check-box span.check {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin-right: 15px;
+        vertical-align: middle;
+    }
+
+    /*    our restaurant ended.*/
+
+    /*    register started.*/
+    .register-box,
+    .identification .register-box {
+        padding: 50px 0;
+    }
+
+    .register .upper {
+        padding: 0 15px;
+    }
+
+    /*register ended.*/
+
+    /*individual restaurant started.*/
+    .about-restaurant {
+        background: transparent;
+    }
+
+    .discounts {
+        padding: 30px 0;
+    }
+
+    .about-restaurant h2 {
+        font-size: 30px;
+    }
+
+    /*individual restaurant ended.*/
+
+    /*    identification started.*/
+    p.identification-dis {
+        background: transparent;
+        font-size: 28px !important;
+        color: #000;
+    }
+
+    /*    identification ended.*/
+
+    /*    user-profile started.*/
+    button.filter-icon {
+        padding: 0 .5rem;
+        font-size: 22px;
+        background: transparent;
+        color: #000;
+        border-radius: 50%;
+        border: 1px solid #bebebe;
+    }
+
+    .restaurant-filter {
+        position: fixed;
+        width: 100%;
+        height: calc(100vh - 56px);
+        top: 56px;
+        z-index: 1;
+        left: 100%;
+        align-content: flex-start;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        overflow-y: auto;
+    }
+
+    .restaurant-filter.active {
+        opacity: 1;
+        display: block;
+        left: 0;
+        right: auto;
+    }
+
+    @keyframes left {
+        0% {
+            left: 100%
+        }
+
+        100% {
+            left: 0
+        }
+    }
+
+    @keyframes right {
+        0% {
+            left: 0%
+        }
+
+        100% {
+            left: 100%
+        }
+    }
+
+    .user-profile .nav-fill .nav-item.back {
+        FONT-SIZE: 24px;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    .upload-box {
+        text-align: center;
+    }
+
+    .user-profile h3 {
+        font-size: 20px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    /*    user-profile ended.*/
+    
+    table.dishes{
+        min-width: 600px;
+    }
+    
+    .user-profile .tab-pane{
+        padding: 15px 0;
+    }
+    
+    .overflow-auto{
+        overflow: auto;
+    }
+    
+    .credit-card input{
+        margin-bottom: 10px;
+    }
+}
+
+/*Ipad portrait mode ended.*/
+/*Mobile landscape mode started.*/
+@media screen and (max-width: 767px) {
+    h2.title {
+        font-size: 40px;
+    }
+    
+    .footer-signup p a {
+        display: block;
+        max-width: 80%;
+        min-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social-icons {
+        background: transparent;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .saperater {
+        margin: auto;
+    }
+
+    .copyright-section {
+        border: none !important;
+    }
+
+    ul.copyright-nav {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    .our-meals,
+    .restaurant-list,
+    .our-partner,
+    .our-team {
+        padding: 30px 0;
+    }
+
+    .upper {
+        margin-bottom: 30px;
+    }
+
+    /*    individual restaurant starterd.*/
+    .restaurant-discount-box h4 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 1rem !important;
+    }
+
+    .discounts h2 {
+        font-size: 28px;
+    }
+
+    /*    individual restaurant ended.*/
+
+    /*    identification started.*/
+    .identification .register-box {
+        padding: 30px;
+    }
+
+    /*    identification ended.*/
+
+    /*user profile started.*/
+    .user-profile-box .col-md-4 {
+        text-align: center;
+    }
+
+    .user-profile-box .rank h3 {
+        font-size: 30px;
+    }
+
+    /*user profile ended.*/
+
+    user-profile .tab-pane {
+        padding: 0;
+    }
+
+    .restaurant-details-form button.btn-submit {
+        width: 60%;
+    }
+    
+    .contact .social-icons{
+        margin-bottom: 30px;
+    }
+    
+    .contact{
+        padding: 30px 0;
+    }
+    
+    .credit-card input, .credit-card input#credit{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/*moblie landscape mode ended.*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .user-profile .other {
+        height: auto !important;
+    }
+}
+
+/*mobile portrait mode started.*/
+@media screen and (max-width: 480px) {
+    a.navbar-brand img {
+        max-width: 150px;
+    }
+
+    .banner img.banner-image {
+        min-height: 300px;
+        object-fit: cover;
+    }
+
+    .banner-box p {
+        font-size: 16px;
+        margin-bottom: 15px !important;
+    }
+
+    h2.title {
+        font-size: 30px;
+    }
+
+    .why-us a {
+        display: block;
+        margin-left: auto;
+        max-width: 80%;
+        margin-right: auto !important;
+        margin-bottom: 15px;
+    }
+
+    .mb-5,
+    .my-5 {
+        margin-bottom: 2rem !important;
+    }
+
+    .why-us,
+    .discount {
+        padding: 30px 0;
+    }
+
+    .discount-amt {
+        font-size: 25px;
+        top: -27px;
+        right: -47px;
+        width: 120px;
+        line-height: 41px;
+        padding-top: 35px;
+    }
+
+    .our-partner img {
+        margin-bottom: 20px;
+    }
+
+    /*    individual restaurant started.*/
+    section.profile-restaurant .upper img {
+        max-height: 300px;
+        max-width: 1000%;
+    }
+
+    .profile-details .col-sm-6:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 15px
+    }
+
+    .discounts .nav-tabs .nav-link {
+        padding: 10px 24px;
+    }
+
+    /*    individual restaurant ended.*/
+
+    .restaurant-details-form button.btn-submit {
+        width: 80%;
+    }
+}
+
+/*mobile portrait mode ended.*/
