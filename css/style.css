@@ -650,8 +650,10 @@ section.restaurent-list .discount-box {
     padding: 60px 0;
 }
 
-.register .register-box{
+.register .register-box {
     padding: 0;
+    padding-left: 30px;
+    border-left: 2px solid #efefef;
 }
 
 .register h1{
@@ -661,7 +663,7 @@ section.restaurent-list .discount-box {
 
 .register p{
     font-size: 18px;
-    line-height: 30px;
+    line-height: 24px;
     text-align: justify;
 }
 
@@ -701,7 +703,7 @@ section.restaurent-list .discount-box {
 
 .credit-card input {
     display: inline-block;
-    max-width: 108px;
+    max-width: 117px;
 }
 
 .credit-card input#credit {

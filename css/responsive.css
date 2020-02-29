@@ -43,6 +43,19 @@
     .upload-box button {
         margin: auto;
     }
+    
+    .register h1{
+        font-size: 42px;
+    }
+    
+    .credit-card input{
+        max-width: 82px;
+    }
+    
+    .credit-card input, .credit-card input#credit{
+        width: 49%;
+        max-width: 100%;
+    }
 }
 
 /*Ipad landscape mode ended.*/
@@ -260,7 +273,7 @@
     }
 
     .register .upper {
-        padding: 0 15px;
+        padding: 30px 15px;
     }
 
     /*register ended.*/
@@ -474,6 +487,17 @@
     .credit-card input, .credit-card input#credit{
         max-width: 100%;
         width: 100%;
+    }
+    
+    .register h1{
+        font-size: 37px;
+    }
+    
+    .register .register-box{
+        border: none;
+        padding: 15px 0 0;
+        border-top: 1px solid #efefef;
+        margin-top: 30px;
     }
 }
 
